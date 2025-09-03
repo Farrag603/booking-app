@@ -1,2 +1,1 @@
-// Atomic components - smallest reusable UI elements
-export {};
+export { default as Input } from "./Input";

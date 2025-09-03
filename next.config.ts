@@ -1,7 +1,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  // Ensures Next.js traces files from the project workspace, not parent folders
+  outputFileTracingRoot: process.cwd(),
 };
 
 export default nextConfig;
