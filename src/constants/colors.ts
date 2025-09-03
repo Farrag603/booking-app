@@ -1,17 +1,26 @@
-// Design tokens for brand colors used across atoms/molecules
-// Extend as needed; keys are referenced by bgToken in Input
+const PRIMARY_COLORS = {
+  PRIMARY_1: "#3B71FE",
+  PRIMARY_2: "#8BC5E5",
+  PRIMARY_3: "#92A5EF",
+  PRIMARY_4: "#58C27D",
+};
 
-export const PRIMARY_COLORS = {
-  PRIMARY_1: "#1D2E56", // primary brand
-  PRIMARY_2: "#243B6B",
-  PRIMARY_3: "#2B4780",
-} as const;
+const SECONDARY_COLORS = {
+  SECONDARY_1: "#A4CDE3",
+  SECONDARY_2: "#E4D7CF",
+  SECONDARY_3: "#FFD166",
+  SECONDARY_4: "#FA8F54",
+};
 
-export const SECONDARY_COLORS = {
-  SECONDARY_1: "#32D875", // secondary accent
-  SECONDARY_2: "#25B863",
-  SECONDARY_3: "#1F9E54",
-} as const;
+const NEUTRAL_COLORS = {
+  NEUTRAL_1: "#FFFFFF",
+  NEUTRAL_2: "#F5F5F5",
+  NEUTRAL_3: "#E0E0E0",
+  NEUTRAL_4: "#BDBDBD",
+  NEUTRAL_5: "#757575",
+  NEUTRAL_6: "#3D3D3D",
+  NEUTRAL_7: "#1A1A1A",
+  NEUTRAL_8: "#000000",
+};
 
-export type PrimaryColorToken = keyof typeof PRIMARY_COLORS;
-export type SecondaryColorToken = keyof typeof SECONDARY_COLORS;
+export { PRIMARY_COLORS, SECONDARY_COLORS, NEUTRAL_COLORS };
