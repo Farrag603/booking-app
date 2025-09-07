@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Input } from "@/components/atoms";
+import { Input } from "@/components/atoms/input";
 
 export default function Home() {
   const [searchValue, setSearchValue] = useState("");
